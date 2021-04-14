@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldSkillsMobileApp.Android", "WorldSkillsMobileApp\WorldSkillsMobileApp.Android\WorldSkillsMobileApp.Android.csproj", "{07C0C6A6-910B-4C4A-BC5A-335C7990623C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldSkillsMobileApp", "WorldSkillsMobileApp\WorldSkillsMobileApp\WorldSkillsMobileApp.csproj", "{5319231D-4049-42FF-8970-A4C1A8A6FA4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07C0C6A6-910B-4C4A-BC5A-335C7990623C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C0C6A6-910B-4C4A-BC5A-335C7990623C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C0C6A6-910B-4C4A-BC5A-335C7990623C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{07C0C6A6-910B-4C4A-BC5A-335C7990623C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C0C6A6-910B-4C4A-BC5A-335C7990623C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07C0C6A6-910B-4C4A-BC5A-335C7990623C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5319231D-4049-42FF-8970-A4C1A8A6FA4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5319231D-4049-42FF-8970-A4C1A8A6FA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5319231D-4049-42FF-8970-A4C1A8A6FA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5319231D-4049-42FF-8970-A4C1A8A6FA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE3C6853-A2C0-4FAF-A19D-7660A47404BD}
+	EndGlobalSection
+EndGlobal
