@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WorldSkillsMobileApp.MainPage">
+             x:Class="WorldSkillsMobileApp.MainPage"
+             Title="Авторизация">
 
-    <StackLayout>
-        <Frame x:Name="frame">
-            <Button Text="Привет мир" Margin="5"></Button>
+    
+    
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="stack" WidthRequest="250">
+        <Frame x:Name="frameLogin" BorderColor="Red">
+            <StackLayout>
+                <Entry Placeholder="Логин" x:Name="entryLogin"/>
+                <Label x:Name="lableLogin" TextColor="Red" Text="Ошибка"/>
+            </StackLayout>
         </Frame>
+        <Frame x:Name="framePassword" BorderColor="Red">
+            <StackLayout>
+                <Entry Placeholder="Пароль" IsPassword="True" x:Name="entryPassword"/>
+                <Label x:Name="lablePassword" TextColor="Red" Text="Ошибка"/>
+            </StackLayout>
+        </Frame>
+        <Frame x:Name="frameCaptcha" BorderColor="Red">
+            <StackLayout>
+                <!--<Image x:Name="imageCaptcha" />-->
+                <Label x:Name="lableCaptcha" TextColor="Gray" Text="Перетощите ползунок вправо."/>
+                <Slider Minimum="0" Maximum="100" MinimumTrackColor="Green" ThumbColor="Green" x:Name="slider">
+                </Slider>
+                <!--<Entry Placeholder="Текст с картинки" IsPassword="True" x:Name="entryCaptcha"/>-->
+                <!--<Label x:Name="lableCaptcha" TextColor="Red" Text="Ошибка"/>-->
+            </StackLayout>
+        </Frame>
+        <Button Text="Войти" x:Name="buttonAutorization" Clicked="ButtonAutorization_Clicked"/>
     </StackLayout>
 
 </ContentPage>
