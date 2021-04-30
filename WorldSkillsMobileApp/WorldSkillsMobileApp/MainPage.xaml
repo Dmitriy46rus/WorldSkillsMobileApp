@@ -9,7 +9,7 @@
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="stack" WidthRequest="250">
         <Frame x:Name="frameLogin" BorderColor="Red">
             <StackLayout>
-                <Entry Placeholder="Логин" x:Name="entryLogin"/>
+                <Entry Placeholder="Логин" x:Name="entryLogin" PlaceholderColor="Gray"/>
                 <Label x:Name="lableLogin" TextColor="Red" Text="Ошибка"/>
             </StackLayout>
         </Frame>

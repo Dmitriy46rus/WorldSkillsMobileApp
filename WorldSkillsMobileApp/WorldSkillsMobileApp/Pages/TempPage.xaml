@@ -5,10 +5,10 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
-                <Label FontSize="Large" TextColor="Black" Text="Big Data для успешного развития бизнеса"/>
-                <Image x:Name="image" HeightRequest="400" WidthRequest="300" Aspect="AspectFill" Source="BigData.jpg"/>
-                <Label FontSize="Large" TextColor="Black" Text="Преимущества Big Data"/>
-                <Label FontSize="Default" TextColor="Gray"  Text="Big Data от Kyivstar — удобный инструмент, который будет полезен любому предприятию, вне зависимости от сферы деятельности. Это программное решение позволяет отказаться от услуг целого аналитического отдела. Экономите вы не только деньги, но и время. Даже не нужно проводить предварительную подготовку данных — инструмент работает с ними в исходном виде. Получается Big Data анализ точным, исключается человеческий фактор. Информацию можно смело использовать для дальнейшего прогнозирования, планирования, построения или корректирования бизнес-стратегии."/>
+                <Label x:Name="lableTitle" FontSize="Large"   TextColor="Gray" FontAttributes="Bold"/>
+                <Image x:Name="image" HeightRequest="400" WidthRequest="300" Aspect="AspectFill" />
+                <Label x:Name="lableSubtitle" FontSize="Large" TextColor="Gray" FontAttributes="Bold" />
+                <Label x:Name="lableDescription" FontSize="Default" TextColor="Gray"  />
 
             </StackLayout>
         </ScrollView>

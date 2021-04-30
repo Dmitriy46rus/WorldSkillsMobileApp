@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace WorldSkillsMobileApp
@@ -25,6 +28,8 @@ namespace WorldSkillsMobileApp
             lablePassword.BackgroundColor = Color.Transparent;
             slider.ThumbImageSource = "RightArrow.png";
             slider.DragCompleted += Slider_DragCompleted;
+
+
         }
 
         private void Slider_DragCompleted(object sender, EventArgs e)
@@ -42,7 +47,7 @@ namespace WorldSkillsMobileApp
             }
         }
 
-        private void ButtonAutorization_Clicked(object sender, EventArgs e)
+        private async void ButtonAutorization_Clicked(object sender, EventArgs e)
         {
             StringBuilder errorList = new StringBuilder();
             if (string.IsNullOrWhiteSpace(entryLogin.Text))
@@ -80,7 +85,12 @@ namespace WorldSkillsMobileApp
             }
             if (errorList.Length == 0)
             {
-                Navigation.PushAsync(new Pages.TempPage() { Title = entryLogin.Text });
+                HttpClient client = new HttpClient();
+                HttpResponseMessage response = await client.GetAsync("http://www.worldskillsrussia.somee.com/api/BigData");
+                HttpContent responseContent = response.Content;
+                string json = await responseContent.ReadAsStringAsync();
+                var data = JsonConvert.DeserializeObject<Pages.BigData>(json);
+                await Navigation.PushAsync(new Pages.TempPage() { Title = entryLogin.Text, BigData = data});
             }
             else
             {
